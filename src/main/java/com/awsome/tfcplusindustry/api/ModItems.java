@@ -12,5 +12,7 @@ public class ModItems {
 		TFCPlusIndustry.LOG.info("Registering Items");
 		
 		GameRegistry.registerItem(wroughtIronGear, wroughtIronGear.getUnlocalizedName());
+		
+		TFCPlusIndustry.LOG.info("Items Registered");
 	}
 }

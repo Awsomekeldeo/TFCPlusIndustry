@@ -3,6 +3,9 @@ package com.awsome.tfcplusindustry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.awsome.tfcplusindustry.api.Constant.ModGlobals;
+import com.dunk.tfc.api.SkillsManager;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -27,6 +30,8 @@ public class TFCPlusIndustry {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		SkillsManager.instance.registerSkill(ModGlobals.SKILL_CHEMISTRY, 100);
+		
 		ItemSetup.setup();
 	}
 	

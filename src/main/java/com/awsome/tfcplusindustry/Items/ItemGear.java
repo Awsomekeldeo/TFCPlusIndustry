@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.awsome.tfcplusindustry.Reference;
 import com.awsome.tfcplusindustry.api.Enums.EnumGearSize;
-import com.dunk.tfc.Core.TFCTabs;
+import com.awsome.tfcplusindustry.core.ModTabs;
 import com.dunk.tfc.Core.Metal.MetalRegistry;
 import com.dunk.tfc.Items.ItemTerra;
 import com.dunk.tfc.TileEntities.TEAnvil;
@@ -26,11 +26,12 @@ public class ItemGear extends ItemTerra implements ISmeltable {
 	private String metal;
 	private short metalAmount;
 	private boolean smeltable = true;
-
+	
+	
 	public ItemGear()
 	{
 		super();
-		setCreativeTab(TFCTabs.TFC_MATERIALS);
+		setCreativeTab(ModTabs.TFC_INDUSTRY);
 		this.setFolder("gears/");
 		metalAmount = 400;
 	}

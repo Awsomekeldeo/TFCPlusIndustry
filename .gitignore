@@ -1,6 +1,7 @@
 # Created by https://www.gitignore.io
 # Following settings: Gradle, intellij, eclipse
 ### Gradle ###
+asm/
 .gradle
 build/
 logs/
@@ -9,6 +10,7 @@ config/
 crash-reports/
 resourcepacks/
 saves/
+libs/
 
 
 # Ignore Gradle GUI config

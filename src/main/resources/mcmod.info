@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tfcplusindustry",
+  "name": "TFC+ Industry",
+  "description": "Expands the late game of TFC far into the Industrial age.",
+  "version": "${mod_version}",
+  "mcversion": ${minecraft_version}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Awsome"],
+  "credits": "Awsome: Creator",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["terrafirmacraftplus"]
+}
+]
