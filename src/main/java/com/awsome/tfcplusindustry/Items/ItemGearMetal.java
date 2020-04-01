@@ -20,7 +20,8 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 
-public class ItemGear extends ItemTerra implements ISmeltable {
+public class ItemGearMetal extends ItemTerra implements ISmeltable {
+	
 	private EnumSize size = EnumSize.SMALL;
 	private EnumGearSize gearSize = EnumGearSize.SMALL;
 	private String metal;
@@ -28,7 +29,7 @@ public class ItemGear extends ItemTerra implements ISmeltable {
 	private boolean smeltable = true;
 	
 	
-	public ItemGear()
+	public ItemGearMetal()
 	{
 		super();
 		setCreativeTab(ModTabs.TFC_INDUSTRY);
@@ -36,7 +37,7 @@ public class ItemGear extends ItemTerra implements ISmeltable {
 		metalAmount = 400;
 	}
 
-	public ItemGear(boolean canSmelt)
+	public ItemGearMetal(boolean canSmelt)
 	{
 		this();
 		smeltable = canSmelt;
@@ -75,13 +76,13 @@ public class ItemGear extends ItemTerra implements ISmeltable {
 	}
 
 	@Override
-	public ItemGear setSize(EnumSize s)
+	public ItemGearMetal setSize(EnumSize s)
 	{
 		size = s;
 		return this;
 	}
 	
-	public ItemGear setGearSize(EnumGearSize s) {
+	public ItemGearMetal setGearSize(EnumGearSize s) {
 		gearSize = s;
 		return this;
 	}
